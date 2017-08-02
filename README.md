@@ -1,6 +1,8 @@
-# django-foundation-form
+# Django Foundation Forms
 
 Reusable Django app for display [zurb foundation forms](http://foundation.zurb.com/)
+
+Updated to support Django 1.11.
 
 ## Installation
 Install with pip: `pip install foundationform`
