@@ -2,7 +2,7 @@
     {% if inline %}
         <div class="large-3 columns">
             <label for="{{ field.auto_id }}" class="right inline">
-                {{ field.label }}
+                {{ field.label }} {% if field.field.required %}<span class="red">*</span>{% endif %}
             </label>
         </div>
         <div class="large-9 columns">
@@ -14,7 +14,7 @@
     {% else %}
         <div class="large-12 columns">
             <label>
-                {{ field.label }}
+                {{ field.label }} {% if field.field.required %}<span class="red">*</span>{% endif %}
             </label>
             {{ field }}
             {% if field.help_text %}<p class="help-text">{{ field.help_text }}</p>{% endif %}
